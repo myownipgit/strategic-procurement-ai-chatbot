@@ -31,11 +31,15 @@ A comprehensive AI-powered procurement platform combining an **Executive Dashboa
 
 **Executive Dashboard in Action** - Real-time procurement analytics with interactive visualizations:
 
-![Executive Dashboard Screenshot](./docs/dashboard-screenshot.png)
+<div align="center">
+  
+![Executive Dashboard Screenshot](https://via.placeholder.com/1200x600/f8f9fa/343a40?text=📊+LIVE+DASHBOARD+SCREENSHOT+%0A%0A✅+Strategic+KPIs:+$515.87M+spend,+$85.2M+savings%0A✅+Interactive+Charts:+5+visualization+types%0A✅+Executive+Insights:+Critical+actions+%26+timelines%0A✅+Professional+Navigation:+Dashboard+↔+AI+Assistant%0A%0A🔄+Add+your+screenshot:+docs/dashboard-screenshot.png)
 
-*The live dashboard displays 6 strategic KPIs, interactive Chart.js visualizations, and actionable executive insights. This screenshot shows the actual working platform with real procurement data analysis.*
+*📷 **Screenshot Instructions**: Save your dashboard screenshot as `docs/dashboard-screenshot.png` to display the live interface. See [SCREENSHOT-FIX.md](./SCREENSHOT-FIX.md) for detailed steps.*
 
-### **Key Features Visible in Screenshot:**
+</div>
+
+### **Key Features Your Screenshot Shows:**
 - **📊 Strategic KPIs**: Total spend ($515.87M), identified savings ($85.2M), active vendors (2,718), contract utilization (65%), risk score (87/100), projected ROI (420%)
 - **📈 Interactive Charts**: Spend analysis with actual vs budgeted trends over 12 months
 - **💡 Executive Insights**: Critical actions including AVAYA contract renegotiation, vendor consolidation opportunities, and contract utilization optimization
@@ -180,7 +184,7 @@ REACT_APP_OPENAI_API_KEY=your_actual_openai_api_key_here
 npm start
 
 # Application launches at http://localhost:3000
-# Defaults to Executive Dashboard view (as shown in screenshot above)
+# Defaults to Executive Dashboard view (take a screenshot for the README!)
 ```
 
 ### 4. **Navigation**
@@ -323,7 +327,8 @@ Each card displays:
 ```
 strategic-procurement-ai-chatbot/
 ├── docs/
-│   └── dashboard-screenshot.png       # Live dashboard preview
+│   ├── dashboard-screenshot.png       # Your live dashboard preview goes here
+│   └── README-screenshot-instructions.md
 ├── src/
 │   ├── components/
 │   │   ├── DashboardPage.js           # Executive Dashboard main
@@ -352,6 +357,7 @@ strategic-procurement-ai-chatbot/
 ├── setup_chatbot.sh                  # Automated setup script
 ├── validate-dashboard.sh              # Dashboard validation script
 ├── security-verification.sh          # Security monitoring script
+├── SCREENSHOT-FIX.md                 # Instructions to add your screenshot
 └── README.md                          # This file
 ```
 
@@ -387,6 +393,7 @@ npm test                      # Run comprehensive test suite
 npm run setup                # Run automated setup script
 ./validate-dashboard.sh      # Validate dashboard components
 ./security-verification.sh  # Verify security posture
+./fix-screenshot.sh         # Get help adding your screenshot
 ```
 
 ---
@@ -400,7 +407,7 @@ npm run setup                # Run automated setup script
 ✅ Strategic insights panel loads with priorities
 ✅ Navigation between Dashboard and AI Assistant
 ✅ Responsive design across devices
-✅ Live dashboard matches screenshot preview
+📷 Add screenshot to complete visual documentation
 ```
 
 ### **Phase 2: AI Assistant Integration**
@@ -424,6 +431,20 @@ npm run setup                # Run automated setup script
 ---
 
 ## 🚨 Troubleshooting
+
+### **Screenshot Issues**
+
+**Image Not Displaying in README:**
+```bash
+# Add your screenshot to the docs directory
+cp /path/to/your/screenshot.png docs/dashboard-screenshot.png
+
+# Or use the fix script
+./fix-screenshot.sh
+
+# Alternative: Upload via GitHub web interface
+# Go to docs/ folder → Add file → Upload files
+```
 
 ### **Dashboard Issues**
 
@@ -563,6 +584,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Documentation**: Check this README and inline code comments
 - **Setup Issues**: Run `./setup_chatbot.sh` for automated configuration
 - **Dashboard Validation**: Run `./validate-dashboard.sh` to check components
+- **Screenshot Help**: Run `./fix-screenshot.sh` for adding your dashboard image
 
 ---
 
@@ -592,7 +614,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### **For C-Suite Executives**
 1. Launch the platform at `http://localhost:3000`
-2. Review **Executive Dashboard** for strategic KPIs (see screenshot above)
+2. Review **Executive Dashboard** for strategic KPIs
 3. Use **AI Assistant** for detailed procurement analysis
 4. Export insights for board presentations
 

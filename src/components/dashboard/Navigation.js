@@ -2,7 +2,8 @@ import React from 'react';
 
 const Navigation = ({ currentPage, setCurrentPage }) => {
   const navItems = [
-    { id: 'dashboard', label: 'Executive Dashboard', icon: '📊' },
+    { id: 'enhanced-dashboard', label: 'Executive Command Center', icon: '⚡' },
+    { id: 'dashboard', label: 'Standard Dashboard', icon: '📊' },
     { id: 'chatbot', label: 'AI Assistant', icon: '🤖' }
   ];
 
@@ -10,7 +11,7 @@ const Navigation = ({ currentPage, setCurrentPage }) => {
     <nav className="bg-gray-900 text-white p-4 shadow-lg">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-8">
-          <h1 className="text-xl font-bold">Strategic Procurement AI</h1>
+          <h1 className="text-xl font-bold">Strategic Procurement AI Platform</h1>
           <div className="flex space-x-4">
             {navItems.map((item) => (
               <button
@@ -28,8 +29,11 @@ const Navigation = ({ currentPage, setCurrentPage }) => {
             ))}
           </div>
         </div>
-        <div className="text-sm text-gray-400">
-          Last Updated: {new Date().toLocaleDateString()}
+        <div className="flex items-center space-x-4">
+          <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+          <div className="text-sm text-gray-400">
+            AI Active • {new Date().toLocaleDateString()}
+          </div>
         </div>
       </div>
     </nav>
