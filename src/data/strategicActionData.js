@@ -19,54 +19,6 @@ export const executiveKPIs = {
   tailSpendRisk: 103620574.23 // Tail spend requiring consolidation
 };
 
-export const strategicActions = [
-  {
-    action: "Emergency Price Standardization",
-    priority: "Critical",
-    timeline: "30 days",
-    savings: 8500000, // CORRECTED: $8.5M from price standardization
-    effort: "High",
-    riskReduction: "Critical",
-    description: "Immediate standardization of pricing units for top 5 variance cases (AVAYA, MOTOROLA, INSIGHT, AUSTIN WHITE LIME, FREEIT)"
-  },
-  {
-    action: "Vendor Consolidation Program",
-    priority: "High",
-    timeline: "90 days", 
-    savings: 12000000, // CORRECTED: $12M from vendor consolidation
-    effort: "Medium",
-    riskReduction: "High",
-    description: "Reduce vendor base from 2,718 to 1,500 through strategic consolidation"
-  },
-  {
-    action: "Unit of Measure Standardization",
-    priority: "High",
-    timeline: "60 days",
-    savings: 3500000, // CORRECTED: $3.5M from eliminating unit confusion
-    effort: "High", 
-    riskReduction: "High",
-    description: "Implement strict unit of measure controls to prevent pricing inconsistencies"
-  },
-  {
-    action: "Contract Terms Optimization",
-    priority: "Medium",
-    timeline: "120 days",
-    savings: 4200000, // CORRECTED: $4.2M from better contract terms
-    effort: "Medium",
-    riskReduction: "Medium",
-    description: "Renegotiate contracts with volume discounts and standardized pricing tiers"
-  },
-  {
-    action: "Data Quality Enhancement",
-    priority: "High",
-    timeline: "60 days",
-    savings: 1200000, // CORRECTED: $1.2M from eliminating data errors
-    effort: "Medium",
-    riskReduction: "Critical",
-    description: "Implement automated data validation and catalog quality controls"
-  }
-];
-
 export const priceVarianceCrisis = [
   {
     vendor: "AVAYA INC",
@@ -130,12 +82,60 @@ export const priceVarianceCrisis = [
   }
 ];
 
+export const strategicActions = [
+  {
+    action: "Emergency Price Standardization",
+    priority: "Critical",
+    timeline: "30 days",
+    savings: 8500000, // CORRECTED: $8.5M from price standardization
+    effort: "High",
+    riskReduction: "Critical",
+    description: "Immediate standardization of pricing units for top 5 variance cases (AVAYA, MOTOROLA, INSIGHT, AUSTIN WHITE LIME, FREEIT)"
+  },
+  {
+    action: "Vendor Consolidation Program",
+    priority: "High",
+    timeline: "90 days", 
+    savings: 12000000, // CORRECTED: $12M from vendor consolidation
+    effort: "Medium",
+    riskReduction: "High",
+    description: "Reduce vendor base from 2,718 to 1,500 through strategic consolidation"
+  },
+  {
+    action: "Unit of Measure Standardization",
+    priority: "High",
+    timeline: "60 days",
+    savings: 3500000, // CORRECTED: $3.5M from eliminating unit confusion
+    effort: "High", 
+    riskReduction: "High",
+    description: "Implement strict unit of measure controls to prevent pricing inconsistencies"
+  },
+  {
+    action: "Contract Terms Optimization",
+    priority: "Medium",
+    timeline: "120 days",
+    savings: 4200000, // CORRECTED: $4.2M from better contract terms
+    effort: "Medium",
+    riskReduction: "Medium",
+    description: "Renegotiate contracts with volume discounts and standardized pricing tiers"
+  },
+  {
+    action: "Data Quality Enhancement",
+    priority: "High",
+    timeline: "60 days",
+    savings: 1200000, // CORRECTED: $1.2M from eliminating data errors
+    effort: "Medium",
+    riskReduction: "Critical",
+    description: "Implement automated data validation and catalog quality controls"
+  }
+];
+
 export const implementationRoadmap = [
   {
     phase: "Phase 1: Crisis Response",
     duration: "0-30 days",
     actions: ["Emergency contract renegotiation", "Procurement freeze on critical cases", "Executive crisis team formation"],
-    savings: 25000000,
+    savings: 45000000,
     investment: 500000
   },
   {
