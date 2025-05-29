@@ -27,6 +27,23 @@ A comprehensive AI-powered procurement platform combining an **Executive Dashboa
 
 ---
 
+## 📸 Live Dashboard Preview
+
+**Executive Dashboard in Action** - Real-time procurement analytics with interactive visualizations:
+
+![Executive Dashboard Screenshot](./docs/dashboard-screenshot.png)
+
+*The live dashboard displays 6 strategic KPIs, interactive Chart.js visualizations, and actionable executive insights. This screenshot shows the actual working platform with real procurement data analysis.*
+
+### **Key Features Visible in Screenshot:**
+- **📊 Strategic KPIs**: Total spend ($515.87M), identified savings ($85.2M), active vendors (2,718), contract utilization (65%), risk score (87/100), projected ROI (420%)
+- **📈 Interactive Charts**: Spend analysis with actual vs budgeted trends over 12 months
+- **💡 Executive Insights**: Critical actions including AVAYA contract renegotiation, vendor consolidation opportunities, and contract utilization optimization
+- **🎯 Professional Navigation**: Seamless switching between Executive Dashboard and AI Assistant
+- **📱 Responsive Design**: Optimized for executive presentations and mobile access
+
+---
+
 ## ✨ Executive Dashboard Features
 
 ### **📊 Strategic KPIs (6 Executive Cards)**
@@ -163,7 +180,7 @@ REACT_APP_OPENAI_API_KEY=your_actual_openai_api_key_here
 npm start
 
 # Application launches at http://localhost:3000
-# Defaults to Executive Dashboard view
+# Defaults to Executive Dashboard view (as shown in screenshot above)
 ```
 
 ### 4. **Navigation**
@@ -305,6 +322,8 @@ Each card displays:
 
 ```
 strategic-procurement-ai-chatbot/
+├── docs/
+│   └── dashboard-screenshot.png       # Live dashboard preview
 ├── src/
 │   ├── components/
 │   │   ├── DashboardPage.js           # Executive Dashboard main
@@ -332,6 +351,7 @@ strategic-procurement-ai-chatbot/
 ├── .env.template                      # Environment configuration
 ├── setup_chatbot.sh                  # Automated setup script
 ├── validate-dashboard.sh              # Dashboard validation script
+├── security-verification.sh          # Security monitoring script
 └── README.md                          # This file
 ```
 
@@ -361,11 +381,12 @@ REACT_APP_RATE_LIMIT_PER_MINUTE=30
 ### **Available Scripts**
 
 ```bash
-npm start                    # Start development server (Dashboard + AI)
-npm run build               # Build for production deployment
-npm test                    # Run comprehensive test suite
-npm run setup              # Run automated setup script
-./validate-dashboard.sh    # Validate dashboard components
+npm start                      # Start development server (Dashboard + AI)
+npm run build                 # Build for production deployment
+npm test                      # Run comprehensive test suite
+npm run setup                # Run automated setup script
+./validate-dashboard.sh      # Validate dashboard components
+./security-verification.sh  # Verify security posture
 ```
 
 ---
@@ -379,6 +400,7 @@ npm run setup              # Run automated setup script
 ✅ Strategic insights panel loads with priorities
 ✅ Navigation between Dashboard and AI Assistant
 ✅ Responsive design across devices
+✅ Live dashboard matches screenshot preview
 ```
 
 ### **Phase 2: AI Assistant Integration**
@@ -570,7 +592,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### **For C-Suite Executives**
 1. Launch the platform at `http://localhost:3000`
-2. Review **Executive Dashboard** for strategic KPIs
+2. Review **Executive Dashboard** for strategic KPIs (see screenshot above)
 3. Use **AI Assistant** for detailed procurement analysis
 4. Export insights for board presentations
 
